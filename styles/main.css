@@ -1,4 +1,24 @@
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+
   body {
     display: flex;
     min-height: 100vh;
@@ -13,6 +33,63 @@
     padding-top: 50px;
   }
 
+/*Mobile Menu Nav CSS*/
+
+  .my_hamburger_nav{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 99;
+
+  }
+
+  .my_menu_btn div {
+  	position: absolute;
+  	left: 100%;
+  	top: 64%;
+  	padding-right: 8px;
+  	margin-top: -0.50em;
+  	line-height: 1.2;
+  	font-size: 18px;
+  	font-weight: 200;
+  	vertical-align: middle;
+  	z-index: 99;
+  }
+
+  .my_menu_btn span {
+  	display: block;
+  	width: 19px;
+  	height: 3px;
+  	margin: 4px 0;
+  	background: rgb(0,0,0);
+  	z-index: 99;
+  }
+
+  .my_responsive_menu{
+    max-height:0;
+    background:black;
+    opacity: 0.6;
+    width:300px;
+    overflow:hidden;
+    transition:all .25s;
+  }
+
+  .mobile_box{
+    max-width: 60%;
+    max-height: 70%;
+
+  }
+
+  .mobile_menu_text{
+    font-size: 26px;
+  }
+
+  .expand {
+
+    max-height:300px;
+  }
+
+
   .main_style_border{
     height: 1rem;
     border-bottom: 1px solid;
@@ -23,19 +100,29 @@
 
   }
 
-.carousel_wrapper{
-    max-height: 700px;
+  .container_pos{
+    position: relative;
   }
 
-.carousel.carousel-slider.initialized{
-    max-height: 700px !important;
-  }
 
+
+.image_pos{
+  width: 100%;
+  height: 700px;
+  background-image: url("http://2.bp.blogspot.com/-7b_0T4pt7UY/VWy-8I1pAyI/AAAAAAAABs4/It7LxgVTe8k/w1200-h630-p-k-no-nu/Desert_Bohemian_Fashion_PHotography_by_Mike_Henry.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main_title_pos{
+  /*position: absolute;
+  top: 20%;*/
+  z-index: -1 !important;
+}
 .main_title{
   font-family: "Cormorant SC", serif;
   padding-top: 35px;
   padding-bottom: 35px;
-
 }
 
 .main_sub_title{
@@ -71,6 +158,90 @@
 }
 
 .nav_logo_small{
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
+  padding: 5px;
+}
+
+
+/*popup CSS*/
+
+.pop-up-wrapper{
+  position: fixed;
+  top:10%;
+  left: 8%;
+  right: 8%;
+  transform: translate(-50,50);
+  z-index: 1 !important;
+
+}
+
+.popup-overlay .active-popup{
+visibility:visible;
+border: 1px solid black;
+text-align: center;
+width: 90%;
+margin: 0 auto;
+background-color: black;
+padding: 65px;
+opacity: 0.83;
+
+}
+
+.popup-content .active-popup{
+visibility:visible;
+text-align: center;
+color: white;
+position: relative;
+
+}
+
+
+
+
+.popup-overlay {
+visibility:hidden;
+}
+
+.popup-content {
+visibility:hidden;
+
+}
+
+.close-button-layout{
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  color: white;
+  background-color: black;
+  font-size: 26px;
+
+}
+
+.subscribe_button_main{
+  color: white;
+  background-color:#fce4ec;
+  border: 1px solid white;
+  height: 60px;
+  width: 135px;
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
+
+
+}
+
+
+
+.submit_button_main{
+  color: white;
+  background-color:blue;
+  border: 1px solid white;
+  height: 60px;
+  width: 135px;
+  font-size: 22px;
+  padding: 10px;
+  text-align: center;
+
+
 }
