@@ -16,13 +16,41 @@
     <nav>
       <div class="nav-wrapper pink lighten-5">
         <a href="#" class="brand-logo center">Your Logo Here</a>
-        <ul id="nav-mobile" class="left hide-on-med-and-down">
-          <li><a class="black-text" href="sass.html">Home</a></li>
-          <li><a class="black-text" href="badges.html">About Us</a></li>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li ><a class="black-text" href="sass.html">Home</a></li>
+          <li ><a class="black-text" href="badges.html">About Us</a></li>
           <li><a class="black-text" href="collapsible.html">FAQ</a></li>
         </ul>
       </div>
+
+<!-- Begin Mobile Menu Nav -->
+
+      <div class="my_hamburger_nav">
+
+         <div class="my_menu_btn" id="my_menu_btn">
+          	<div></div>
+          	<span></span>
+          	<span></span>
+          	<span></span>
+         </div>
+
+         <div class="my_responsive_menu">
+            <ul class="mobile_box">
+              <li id="mobile_link"><a class="white-text mobile_menu_text" href="sass.html">Home</a></li>
+              <li id="mobile_link"><a class="white-text mobile_menu_text" href="badges.html">About Us</a></li>
+              <li id="mobile_link"><a class="white-text mobile_menu_text" href="collapsible.html">Merchandise</a></li>
+                <li id="mobile_link"><a class="white-text mobile_menu_text" href="collapsible.html">Volunteer</a></li>
+                  <li id="mobile_link"><a class="white-text mobile_menu_text" href="collapsible.html">FAQ</a></li>
+                    <li id="mobile_link"><a class="white-text mobile_menu_text" href="collapsible.html">Locations</a></li>
+            </ul>
+         </div>
+     </div>
+
+     <!-- End mobile menu nav -->
+
     </nav>
+
+
 
     <div class="main_style_border top">
       &nbsp;
@@ -32,8 +60,31 @@
     </div>
 
 
-  <header class="container">
-    <h1 class="main_title center-align"> SHOPPING SITE </h1>
+  <header class="container container_pos">
+    <div class="main_title_pos">
+      <h1 class="main_title center-align"> SHOPPING SITE </h1>
+    </div>
+
+    <!-- START OUR POP-UP -->
+
+<div class="pop-up-wrapper">
+      <!--Creates the popup body-->
+      <div class="popup-overlay active-popup">
+      <!--Creates the popup content-->
+       <div class="popup-content active-popup">
+          <h2 style="color:white;">GET 25% OFF YOUR FIRST PURCHASE!</h2>
+          <p style="color: white; font-size: 30px; border: 1px solid white; padding: 15px;"> Promo Code: CODEISGR8</p>
+         <!--popup's close button-->
+          <button class="close close-button-layout">X</button>
+      </div>
+      </div>
+    </div>
+
+
+    <!-- END OUR POPUP -->
+
+
+
   </header>
 
   <div class="main_style_border">
@@ -44,20 +95,24 @@
   </div>
 
 
-  <section class="carousel_wrapper">
 
-    <div class="carousel carousel-slider">
-      <a class="carousel-item" indicators="true" noWrap="true" duration="200" href="#one!"><img src="https://annajasminex.files.wordpress.com/2015/01/fashion-photography-24.jpg"></a>
-      <a class="carousel-item" indicators="true" noWrap="true" duration="200" href="#two!"><img src="http://inspirationi.com/wp-content/uploads/2012/03/Fashion-Photography-by-Samia.jpg"></a>
-      <a class="carousel-item" indicators="true" noWrap="true" duration="200" href="#three!"><img src="https://grubnews.files.wordpress.com/2011/08/3.jpg"></a>
-      <a class="carousel-item" indicators="true" noWrap="true" duration="200" href="#four!"><img src="http://www.fashionodor.com/wp-content/uploads/2011/10/River-Island-Fall-2011-Ad-Campaign-08-600x400.jpg"></a>
-    </div>
+    <section class="carousel_wrapper">
 
-  </section>
+      <div class="image_pos">
+        &nbsp;
+
+      </div>
+
+    </section>
+
+
 
   <h2 class="main_sub_title center-align"> WOMEN'S CLOTHING</h2>
 
+
+
   <section class="container grid_wrapper">
+
 
     <div class="row grid_row">
 
@@ -149,7 +204,7 @@
 
   <footer>
 
-    <footer class="page-footer pink lighten-5">
+    <footer class="page-footer pink lighten-5" id="#footer-ref">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -164,13 +219,22 @@
                 </ul>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="black-text">Links</h5>
-                <ul>
-                  <li><a class="black-text text-lighten-3" href="#!"><img class="nav_logo_small" src="assets/logo_facebook.svg" /></a></li>
-                  <li><a class="black-text text-lighten-3" href="#!"><img class="nav_logo_small" src="assets/logo_Instagram.svg" /></a></li>
-                  <li><a class="black-text text-lighten-3" href="#!"><img class="nav_logo_small" src="assets/logo_square-twitter.svg" /></a></li>
+                <h5 class="black-text">Follow Us on Social Media</h5>
+                <ul class="cf">
+                  <li class="left"><a class="black-text text-lighten-3" href="#!"><img class="nav_logo_small" src="assets/logo_facebook.svg" /></a></li>
+                  <li class="left"><a class="black-text text-lighten-3" href="#!"><img class="nav_logo_small" src="assets/logo_Instagram.svg" /></a></li>
+                  <li class="left"><a class="black-text text-lighten-3" href="#!"><img class="nav_logo_small" src="assets/logo_square-twitter.svg" /></a></li>
 
                 </ul>
+
+<!-- Subscriber Button -->
+
+                <a href="#form_ref" class="valign-wrapper">
+                <div class="subscribe_button_main">Subscribe</div>
+                </a>
+
+
+
               </div>
             </div>
           </div>
